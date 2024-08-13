@@ -3,9 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WordLookup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Word Lookup</title>
 </head>
 <body>
-  
+  <div class="container">
+    <input id="txtLookup" type="text" placeholder="Enter a word..." />
+    <button id="lookupBtn">Lookup</button>
+
+    <div class="results">
+      <div class="word">
+        <p class="w-heading">English</p>
+        <p class="result" id="lookupWord">lookupword</p>
+        <p class="w-heading">Sinhala</p>
+        <p class="result" id="sinhalaWord">sinhala word</p>
+      </div>
+      <div class="definition">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, praesentium!</p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="popup.js"></script>
 </body>
 </html>
